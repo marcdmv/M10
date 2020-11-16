@@ -2,7 +2,7 @@ package itacademy.domain;
 
 public class Flower extends AbsItems {
 
-    private String color;
+    private final String color;
 
     public Flower(String name, double price, String color) throws Exception {
 
@@ -26,11 +26,7 @@ public class Flower extends AbsItems {
         return price;
     }
 
-    public String getFlowerColor() {
-        return color;
-    }
-
-    public String getProperty(){
+    public String getProperty(){ //En este tipo de objeto, el método devuelve el color de la flor.
         return "color: " + color;
     }
 

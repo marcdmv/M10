@@ -2,7 +2,7 @@ package itacademy.domain;
 
 public class Decoration extends AbsItems {
 
-    private String material;
+    private final String material;
 
     public Decoration(String name, double price, String material) throws Exception{
         super(name,price);
@@ -24,7 +24,8 @@ public class Decoration extends AbsItems {
         return price;
     }
 
-    public String getProperty(){
+    public String getProperty(){ //En este tipo de objeto, el método devuelve el material del elemento decorativo.
+
         return "material: " + material;
     }
 

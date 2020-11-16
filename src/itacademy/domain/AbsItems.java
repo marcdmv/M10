@@ -23,5 +23,5 @@ public abstract class AbsItems {
     public abstract int getId();
     public abstract String getName();
     public abstract double getPrice();
-    public abstract String getProperty();
+    public abstract String getProperty(); // Método abstracto importante, ya que para cada tipo de objeto devuelve un elemento diferente.
 }

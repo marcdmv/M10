@@ -8,11 +8,17 @@ public class Shop {
 
     }
 
-    public String getName(){
+    public String getName() throws Exception {
+        if (name.equals("")) {
+            throw new Exception("El nombre está vacío");
+        }
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) throws Exception {
+        if (name.equals("")) {
+            throw new Exception("El nombre no puede dejarse en blanco");
+        }
         this.name = name;
     }
 }

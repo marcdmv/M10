@@ -2,7 +2,7 @@ package itacademy.domain;
 
 public class Tree extends AbsItems {
 
-    private double height;
+    private final double height;
 
     public Tree(String name, double price, double height) throws Exception {
         super(name,price);
@@ -24,8 +24,8 @@ public class Tree extends AbsItems {
         return price;
     }
 
-    public String getProperty(){
-        return "altura: " + String.valueOf(height);
+    public String getProperty(){ //En este tipo de objeto, el método devuelve la altura del árbol.
+        return "altura: " + height;
     }
 
     public String getType(){
